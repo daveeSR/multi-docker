@@ -14,7 +14,7 @@ after_success:
   - docker build -t davveee/multi-server ./server
   - docker build -t davveee/multi-worker ./worker
 
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" -- password-stdin
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
   - docker push davveee/multi-client
   - docker push davveee/multi-nginx
