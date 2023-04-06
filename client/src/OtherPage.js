@@ -5,7 +5,7 @@ const OtherPage = () => {
   return (
     <div>
       Im some other page!
-      <Link to="/">Go back home</Link>
+      <Link to="/">Go back to the home screen</Link>
     </div>
   );
 };
